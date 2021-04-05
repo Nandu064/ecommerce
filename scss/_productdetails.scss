@@ -1,0 +1,44 @@
+@import 'variables';
+
+.single-product{
+    margin-top: 80px;
+    & .col-2{
+        padding: 20px;
+        & img{
+            padding: 0;
+        }
+    }
+    & h4{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    & select{
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    & input{
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 20px;
+        margin-right: 10px;
+        border: 1px solid #ff523c;
+        &:focus{
+            outline: none;
+        }
+    }
+    & .fa{
+        color: $btn-background;
+        margin-left: 10px;
+    }
+}
+
+.img-gallery-row{
+    display: flex;
+    justify-content: space-between;
+}
+.img-gallery-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}

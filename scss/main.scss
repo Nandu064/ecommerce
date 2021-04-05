@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-$text-color:#555;
-$btn-background: #e0412c;
-$header-background: radial-gradient(#fff,#d6fffd);
+@import 'products';
+@import 'variables';
+@import 'productdetails';
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -232,5 +232,20 @@ ul{
     }
     .col-2,.col-3,.col-4{
         flex-basis: 100%;
+    }
+    .single-product{
+        & .row{
+            text-align: left;
+        }
+        & .col-2{
+            padding: 20px 0;
+        }
+        & h1{
+            font-size: 26px;
+            line-height: 32px;
+        }
+        & h4{
+            margin: 0;
+        }
     }
 }
