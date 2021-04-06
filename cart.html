@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Product Details</title>
+    </head>
+    <body>
+        <!--Header Section-->
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo-white.jpg" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="account.html">My Account</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                    <img src="images/menu.png" class="hamburger-menu" onclick="togglemenu()">
+                </div>
+            </div>
+        <!--End Of Header Section-->
+        <!--Cart-->
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Ouantity</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/product-1.jpg">
+                            <div>
+                                <p>Red Printed T shirt</p>
+                                <small>Price: Rs.1000</small><br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.1000.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/product-2.jpg">
+                            <div>
+                                <p>Red Printed T shirt</p>
+                                <small>Price: Rs.1000</small><br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.1000.00</td>
+                </tr><tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/product-3.jpg">
+                            <div>
+                                <p>Red Printed T shirt</p>
+                                <small>Price: Rs.1000</small><br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.1000.00</td>
+                </tr>
+            </table>
+            <div class="buy-price">
+                <table>
+                    <tr>
+                        <td>Price</td>
+                        <td>Rs.3000</td>
+                    </tr>
+                    <tr>
+                        <td>Delivary charges</td>
+                        <td>Rs.140</td>
+                    </tr>
+                    <tr>
+                        <td>Amount</td>
+                        <td>Rs.3140</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--End of Cart-->
+       <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.jpg" alt="">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga non ea veniam nesciunt numquam nulla alias? Officia aliquam maiores excepturi quae, vel, iste consequatur ipsum quis autem ullam ab.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blogs</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Js for toggling mmenu-->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function togglemenu(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <!--End of Js for menu toggling-->
+    </body>
+</html>

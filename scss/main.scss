@@ -7,6 +7,8 @@
 @import 'products';
 @import 'variables';
 @import 'productdetails';
+@import 'cart';
+@import 'account';
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -226,7 +228,7 @@ ul{
     }
 }
 /* media query for less than 600 screen sizes*/
-@media only screen and (max-width:800px){
+@media only screen and (max-width:600px){
     .row{
         text-align: center;
     }
@@ -246,6 +248,11 @@ ul{
         }
         & h4{
             margin: 0;
+        }
+    }
+    .cart-info{
+        & p{
+            display: none;
         }
     }
 }
